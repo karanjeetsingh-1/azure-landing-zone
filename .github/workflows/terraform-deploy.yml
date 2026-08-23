@@ -7,7 +7,7 @@ on:
       - "feature/**" # Triggers on any branch starting with feature/
 
 env:
-  TF_WORKING_DIR: 'azure-landing-zone/environment/dev'
+  TF_WORKING_DIR: 'environment/dev'
   ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
   ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
@@ -76,7 +76,7 @@ jobs:
         env:
           # Authenticate the GitHub CLI using the built-in token
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
   # 3. CD Job: Applies changes ONLY when code hits the main branch
   terraform-apply:
     name: 'Terraform Apply'
