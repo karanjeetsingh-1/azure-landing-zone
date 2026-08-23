@@ -4,7 +4,7 @@ on:
   push:
     branches: 
       - "main"
-      - "feature/**" # Triggers on any branch starting with feature/
+      - "feature/**" # Triggers on any branch starting with feature
 
 env:
   TF_WORKING_DIR: 'environment/dev'
