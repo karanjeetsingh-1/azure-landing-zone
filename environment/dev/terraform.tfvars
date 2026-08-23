@@ -3,10 +3,10 @@ rgs = {
     name     = "rg_kjs_1"
     location = "centralus"
   }
-  rg_2 = {
-    name     = "rg_kjs_2"
-    location = "centralus"
-  }
+  # rg_2 = {
+  #   name     = "rg_kjs_2"
+  #   location = "centralus"
+  # }
 }
 
 # sas = {
